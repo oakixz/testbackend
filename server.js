@@ -19,7 +19,7 @@ const local = process.env.LOCAL || "http://localhost";
 const app = express();
 
 app.use(cors({
-  origin: [`${local}}`],
+  origin: [`${local}`],
   credentials: true
 }));
 
