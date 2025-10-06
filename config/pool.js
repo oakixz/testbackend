@@ -9,7 +9,7 @@ const pool = mysql.createPool({
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASS || "",
   database: process.env.DB_NAME || "mydb",
-  post : process.env.DB_PORT || "3306",
+  port : process.env.DB_PORT || "3306",
   waitForConnections: true,
   connectionLimit: 10,   // จำนวน connection ที่เปิดไว้
   queueLimit: 0
