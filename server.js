@@ -12,10 +12,12 @@ import teacherRoute from "./routes/teacherRoute.js";
 dotenv.config();
 const port = process.env.PORT || 3000;
 
+const local = process.end.LOCAl || http://localhost:
+
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:5000", "http://127.0.0.1:5500", "http://localhost"],
+  origin: [`${local}${post}`],
   credentials: true
 }));
 
@@ -45,5 +47,5 @@ app.use("/api/teacher" , teacherRoute);
 
 
 app.listen(port, () => {
-  console.log(`🚀 Server running at http://localhost:${port}`);
+  console.log(`🚀 Server running at ${local}${port}`);
 });
