@@ -49,5 +49,5 @@ app.use("/api/teacher" , teacherRoute);
 
 
 app.listen(port, () => {
-  console.log(`🚀 Server running at ${local}}`);
+  console.log(`🚀 Server running at ${local}`);
 });
